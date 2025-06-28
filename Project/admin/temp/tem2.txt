@@ -1,0 +1,37 @@
+
+///////////////////////for fetching profile picture
+
+<?php
+$con = mysqli_connect("localhost", "root", "", "sms") or die("Connection Failed...");
+
+$id = $_SESSION["ausername"];
+
+$sql = "SELECT M_IMG FROM member where M_USERNAME='$id'";
+$rq = mysqli_query($con, $sql);
+
+if (mysqli_num_rows($rq) > 0) 
+{
+    while ($row = mysqli_fetch_assoc($rq)) 
+    {
+    ?>
+    <img class="img-profile rounded-circle" src="<?php $row['M_IMG'];?>>
+    <?php } 
+}
+else
+{?>
+    <img class="img-profile rounded-circle" src="img/pp.jpg">
+<?php  }
+?>
+
+
+
+
+$_SESSION["from"] = $_POST['from'];
+$_SESSION["to"]  = $_POST['to'];
+
+$_SESSION["hno"]= $row['H_NO'];
+$_SESSION["mfname"]= $row['M_F_NAME'];
+$_SESSION["mphone"]= $row['M_PHONE'];
+$_SESSION["ptype"]= $row['P_TYPE'];
+$_SESSION["pdate"]= $row['P_DATE'];
+$_SESSION["pamount"]= $row['P_AMOUNT'];

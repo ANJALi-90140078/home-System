@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karnavati Apartment</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- bootstrap cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="images/FAVICON.ico">
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" /> -->
+
+
+</head>
+
+<body>
+
+    <!-- header section starts     -->
+
+    <header class="myheader fixed-top">
+        <nav class="mynav">
+            <div class="logo">Welcome</div>
+            <label for="btn" class="icon">
+				<span class="fa fa-bars"></span>
+			</label>
+            <input type="checkbox" id="btn">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <label for="btn-1" class="show">Login +</label>
+                    <a href="#" id="dropdown4" data-toggle="dropdown" aria-haspopup="true">Login</a>
+                    <input type="checkbox" id="btn-1">
+                    <ul>
+                        <li><a href="Login/adminlogin.php">Admin</a></li>
+                        <li><a href="Login/memberlogin.php">Member</a></li>
+                        <li><a href="Login/securitylogin.php">Security Person</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <script>
+            $('.icon').click(function() {
+                $('span').toggleClass("cancel");
+            });
+        </script>
+    </header>
+
+    <!-- header section ends    -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="row align-items-center text-center text-md-left min-vh-100">
+                <div class="col-md-6">
+                    <h3>Karnavati Apartment</h3>
+                    <!-- <a href="#" class="link-btn" style="
+			position: relative;
+			left: 45rem;
+		">Explore Now</a> -->
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- about section starts  -->
+
+    <section class="about" id="about">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="images/about-us.jpg" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="title">E-Housing Society</h3>
+                    <p>The E-Housing society is web-application which is used to manage apartments and members of the society. This system will keep the details of notices, meetings, cultural events and also contains sections such as compliant, online payment,
+                        review etc.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- about section ends -->
+
+    <!-- gallery section starts  -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> Our Gallery </h1>
+
+        <div class="box-container container">
+
+            <!-- <div class="box">
+                <img class="image__img" src="images/Gallery/Karnavati-Apartment-II.jfif"></img>
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__title">Karnavati Apartment</div>
+                </div>
+            </div> -->
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/Karnavati-Apartment-II.jfif" alt="">
+                <h3>Karnavati Apartment</h3>
+            </div>
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/diwali.jfif" alt="">
+                <h3>Diwali Celebration</h3>
+            </div>
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/dhuleti.jpg" alt="">
+                <h3>Holi Celebration</h3>
+            </div>
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/kite-flying.jpg" alt="">
+                <h3>Kite Festival</h3>
+            </div>
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/navratri.jpg" alt="">
+                <h3>Navaratri</h3>
+            </div>
+
+            <div class="textwithblurredbg">
+                <img src="images/Gallery/ganeshchaturthi.jpg" alt="">
+                <h3>Ganesh Chaturthi</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- gallery section ends -->
+
+    <!-- contact section starts  -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> contact us </h1>
+
+        <div class="container">
+
+            <div class="contact-info-container">
+
+                <div class="box">
+                    <i class="fas fa-phone"></i>
+                    <h3>phone</h3>
+                    <p>+91 80007 31008</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>email</h3>
+                    <p>karnavatiapart@gmail.com</p>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-map"></i>
+                    <h3>address</h3>
+                    <p>Sola Road, Near Paras Nagar, Naranpura,<br> Ahmedabad, india - 380063</p>
+                </div>
+
+            </div>
+
+            <!-- <div class="row align-items-center">
+
+                <div class="col-md-6 mb-5 mb-md-0 ">
+                    <iframe class="map w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.0982302574175!2d72.54157931448937!3d23.056860020832712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e85d1aa150291%3A0x781871e7c8412a6e!2sKarnavati%20apartment!5e0!3m2!1sen!2sin!4v1671034733560!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <form action="" class="col-md-6">
+                    <h3>get in touch</h3>
+                    <input type="text" placeholder="your name" class="box" required>
+                    <input type="email" placeholder="email" class="box" required>
+                    <input type="tel" placeholder="phone" class="box" required>
+                    <textarea name="" placeholder="message" class="box" id="" cols="30" rows="10" required></textarea>
+                    <input type="submit" value="send message" class="link-btn1">
+                </form>
+
+            </div> -->
+
+        </div>
+
+    </section>
+
+    <!-- contact section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer container">
+
+        <p class="credit"> &#169 <span>Karnavati Apartment</span> | all rights reserved! </p>
+
+    </section>
+
+    <!-- footer section ends -->
+
+
+    <script>
+        const header = document.querySelector('.myheader');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 0) {
+                header.classList.add("active");
+            } else {
+                header.classList.remove("active");
+            }
+        });
+
+        // const menu = document.querySelector('#menu-btn');
+        // const nav = document.querySelector('.mynav');
+        // menu.onclick = () => {
+        //     menu.classList.toggle('fa-times');
+        //     navbar.classList.toggle('active');
+        // }
+    </script>
+    <!-- custom js file link  -->
+    <script src="./js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/fa82ee3476.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

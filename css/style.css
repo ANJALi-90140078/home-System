@@ -1,0 +1,12 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    /* background-image: linear-gradient(-180deg, #227C70,#88A47C,#E6E2C3); */
+    /* background-image: linear-gradient(-180deg,#E6E2C3, #227C70,#88A47C); */
+    /* background-image: linear-gradient(-145deg,#205295,#0A2647); */
+    background-image: linear-gradient(-145deg,#f5faff,#87b0de);
+}

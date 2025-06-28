@@ -1,0 +1,57 @@
+
+ $id = $_SESSION["musername"];
+               $sql = "SELECT * FROM member where M_USERNAME='$id'";
+               $rq = mysqli_query($con, $sql);
+
+                        if (mysqli_num_rows($rq) > 0) {
+                            while ($row = mysqli_fetch_assoc($rq)) {
+                                $id = $row['M_ID'];
+                            }
+                        }
+
+
+
+
+
+
+<?php
+include('includes/header.php'); 
+include('includes/navbar.php');
+?>
+
+<div class="container-fluid">
+
+<div class="card shadow mb-4">
+<div class="card-header py-3">
+    <h6 class="m-0 font-weight-bolder text-dark">Edit Admin Profile</h6>
+</div>
+
+<div class="card-body">
+
+
+
+
+        </div>
+        </div>
+
+</div>
+
+
+<?php
+include('includes/scripts.php');
+include('includes/footer.php');
+?>
+
+
+
+
+<tr>
+                            
+                            <form action="viewcomplaint.php" method="post">
+
+                                    <center>
+                                        <div class="btn-group btn-group-lg">
+                                            <button class="btn btn-success mb-4">BACK</button>
+                                        </div>
+                                    </center>
+                        </form></tr>

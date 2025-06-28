@@ -1,0 +1,91 @@
+<?php
+$con=mysqli_connect("localhost","root","","sms") or die("Connection Failed...");
+
+if (isset($_POST['submit'])) 
+{
+   
+    $name = $_POST['name'];
+    $username = $_POST['username'];
+    $email = $_POST['email'];
+    $contact = $_POST['contact'];
+
+        $sql = "INSERT INTO member(M_F_NAME,M_USERNAME,M_PASSWORD,M_EMAIL,M_PHONE,ROLE_ROLE_ID) 
+        VALUES ('$name','$username','$password','$email','$contact','1')";
+
+        $chek_insert = mysqli_query($con, $sql);
+        if ($chek_insert) 
+        {
+           $_SESSION['success'] = "Admin Profile Added";
+           //echo "<script type='text/javascript'>alert('Registration Sucessfull!');</script>";
+           //echo "<script type='text/javascript'> document.location = 'register.php'; </script>";
+        } else 
+        {
+           echo "<script type='text/javascript'>alert('Something went wrong!!');</script>";
+            
+        }
+    
+       mysqli_close($con);
+}
+
+?>
+
+
+///////////////////page
+
+
+<?php
+include('includes/header.php'); 
+include('includes/navbar.php');
+?>
+
+<div class="container-fluid">
+
+<div class="card shadow mb-4">
+<div class="card-header py-3">
+    <h6 class="m-0 font-weight-bolder text-dark">Edit Admin Profile</h6>
+</div>
+
+<div class="card-body">
+
+
+
+
+        </div>
+        </div>
+
+</div>
+
+
+<?php
+include('includes/scripts.php');
+include('includes/footer.php');
+?>
+
+
+
+///////////////////////dlete _SESSION
+
+  <?php
+    if (isset($_SESSION['delete'])) {
+    ?>
+      <div class="alert alert-primary mt-4" role="alert">
+        <?php
+
+      echo $_SESSION['delete'];
+      unset($_SESSION['delete']);
+
+    }
+      ?>
+      </div>
+
+      <?php
+    if (isset($_SESSION['notdelete'])) {
+    ?>
+      <div class="alert alert-primary mt-4" role="alert">
+        <?php
+
+      echo $_SESSION['notdelete'];
+      unset($_SESSION['notdelete']);
+
+    }
+      ?>
