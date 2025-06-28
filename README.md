@@ -1,4 +1,4 @@
-# BCA Home Services Project
+# Home Services Project
 This Project is a web-based platform designed to connect users with home service providers for a variety of tasks such as cleaning, plumbing, electrical work, and more. The system allows users to book services, manage their appointments, and view available service providers in their area, while service providers can manage their service offerings and availability. An admin panel is included to oversee users, services, and bookings.
 
 This project is built using PHP, MySQL, and is designed to run on a XAMPP server.
@@ -13,7 +13,6 @@ This project is built using PHP, MySQL, and is designed to run on a XAMPP server
 - [How to Use](#how-to-use)
 - [Contributing](#contributing)
 - [Future Improvements](#future-improvements)
-- [License](#license)
 - [Contact](#contact)
 
 ## Features
@@ -40,16 +39,14 @@ To run this project on your local machine, ensure the following software is inst
 
 1. **Clone the repository:**
 
-   ```bash
-   git clone https://github.com/deepkorat/BCA-home-Services-Project.git
-   ```
+   
 
 2. **Move the project:** 
 
    Move the cloned project folder into the `htdocs` directory of your XAMPP installation:
 
    ```bash
-   C:/xampp/htdocs/BCA-home-Services-Project
+   C:/xampp/htdocs/home-Services-Project
    ```
 
 3. **Create the database:**
@@ -109,13 +106,9 @@ Contributions are always welcome!
 ## License
 This project is licensed. 
 
-[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 
 ## Contact
 For questions or suggestions, please contact:
-
-- **Deep Korat** - [Email](mailto:your-deepkorat13@gmail.com) 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Deep_Korat-informational?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/deep-korat-03273a210/
-)
+ - [Email](mailto:anjaliametwar@gmail.com) 
 
