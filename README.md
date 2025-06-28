@@ -66,10 +66,10 @@ $username = "root";  // Default username for XAMPP
 $password = "";  // Leave blank for XAMPP default
 $database = "hs";  // Name of the database you created
 ```
-- Open your browser and navigate to http://localhost/BCA-home-Services-Project/db/dbconnect.php to make database connection.
+- Open your browser and navigate to http://localhost/home-Services-Project/db/dbconnect.php to make database connection.
 
 5. **Run the project:**
-- After successfully connection of database, you can access the platform -> http://localhost/BCA-home-Services-Project/index.php 
+- After successfully connection of database, you can access the platform -> http://localhost/home-Services-Project/index.php 
 
 
 ## Tech Stack
@@ -100,11 +100,7 @@ Contributions are always welcome!
 
 ## Future Improvements
 - **Payment Gateway Integration:** Enable users to pay for services online.
-- **Mobile Optimization:** Improve the responsiveness for mobile devices.
-
-
-## License
-This project is licensed. 
+- **Mobile Optimization:** Improve the responsiveness for mobile devices
 
 
 
